@@ -16,6 +16,12 @@ The folder *Core* contains the core of the software: how it works. It manages th
 
 The folder *PluginDefault* contains the interface used by default (you can see it on the screenshot). This plugin is separeted in two classes (but it isn't an obligation !): Default manages the list of musics and Player represents the player at left. The plugin needs the QSqliteCom library, to get the list of tracks and necessary informations.
 
+After compiling this plugin, you must copy the obtained library in the folder *[folder where is built your executable]/views/Default/* and rename the library *Default.dll* (the project was initialy coded on Windows !). The plugin needs too images which are in *PluginDefault/Resources/* folder and which must be too copied in the same directory as the library *Default.dll*. 
+
+I advise you to write a (very) little shell which copy alone the built library, and which is executed by you IDE (QtCreator makes it very good). *start_debug.bat* and *start_debug.sh* are two examples, one for Windows and one for Linux.
+
+The *update.xml* file is an example of informations that requires Tavrisu when it looks for updates.
+
 ##Known issues
 * the export in XML format can be problematic because values are not escaped.
 * when a music ends, the software doesn't always respect the order as it is defined in the list. 
