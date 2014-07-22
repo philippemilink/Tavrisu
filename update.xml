@@ -1,0 +1,11 @@
+<TavrisuUpdate>
+	<id>2</id>
+	<version>0.1.2</version>
+	<type>Bêta</type>
+	<path>http://localhost/tavrisu/tavrisu0.1b2.exe</path>
+	<md5>e764cb152c01db0c9f31848fd40ab2a3</md5>
+	<whatsnew>
+		<item>Test de la màj</item>
+	</whatsnew>
+	<date year="2013" month="10" day="18" />
+</TavrisuUpdate>
